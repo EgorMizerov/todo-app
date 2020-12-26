@@ -30,7 +30,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 		{
 			lists.POST("/", h.createList)
 			lists.GET("/", h.getAllLists)
-			lists.GET("/:id", h.getListByid)
+			lists.GET("/:id", h.getListById)
 			lists.PUT("/:id", h.updateList)
 			lists.DELETE("/:id", h.deleteList)
 
@@ -38,7 +38,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 			{
 				items.POST("/", h.createItem)
 				items.GET("/", h.getAllItems)
-				items.GET("/:item_id", h.getItemByid)
+				items.GET("/:item_id", h.getItemById)
 				items.PUT("/:item_id", h.updateItem)
 				items.DELETE("/:item_id", h.deleteItem)
 			}

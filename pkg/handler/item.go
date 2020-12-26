@@ -10,7 +10,7 @@ func (h *Handler) getAllItems(c *gin.Context) {
 
 }
 
-func (h *Handler) getItemByid(c *gin.Context) {
+func (h *Handler) getItemById(c *gin.Context) {
 
 }
 
